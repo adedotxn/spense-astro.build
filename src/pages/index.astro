@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '../styles/style.css'
+// import '../js/index.js'
+
+---
+
+<Layout title="Spense | Landing Page">
+	<section class="section__top">
+		<header>
+			<div class="logo">
+				<h1>Spense.</h1>
+			</div>
+
+			<ul class = "mid__header desktop">
+				<li class="link link__animatn" >Business</li>
+				<li class="link link__animatn">Pricing</li>
+				<li class="link link__animatn">Features</li>
+			</ul>
+
+			<div class="last__header desktop">
+				<ul>
+					<li class="link link__animatn" > Login </li>
+					<li> <a href="/"> Get Started </a> </li>
+				</ul>
+			</div>
+
+			<div id="menu" class="mobile">
+				<img src="/Hamburger Menu.svg" alt="" srcset="">
+			</div>
+		</header>
+
+
+		<section class="hero">
+			<div class="hero__images" >
+				<!-- <img class="hero_image__mobile" src="/Hero Image (Mobile).png" alt="">
+				<img class="hero_image__tablet" src="/Hero Image (Tablet).png" alt="">
+				<img class="hero_image__desktop" src="/Hero Image (Desktop).png" alt=""> -->
+
+
+				<picture>
+					<source srcset="/Hero-Image(Mobile).png">
+					<source media="(min-width: 768px)" srcset="/Hero-Image(Tablet).png">
+					<source media="(min-width: 1000px)" srcset="/Hero-Image(Desktop).png">
+					<img class="hero_image__mobile" src="/Hero-Image(Mobile).png" alt="">
+				</picture>
+			</div>
+
+			<div class="hero__text" >
+
+				<h2>Share your unfiltered thoughts. Get paid.</h2>
+				<p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, 
+					and get paid for doing <em>just</em> that 
+				</p>
+
+				<ul>
+					<li> 
+						<img src="/Checkmark.svg" alt="Receive 99% off the earnings.">  
+						<span>Receive 99% off the earnings.</span>
+					</li>
+					<li> 
+						<img src="/Checkmark.svg" alt="Get paid via Debit Card, ACH, or PayPal."> 
+						<span>Get paid via Debit Card, ACH, or PayPal.</span> 
+					</li>
+					<li>
+						<img src="/Checkmark.svg" alt="Withdraw your earnings anytime."> 
+						<span>Withdraw your earnings anytime.</span> 
+					</li>
+				</ul>
+
+				<div class="hero__input">
+					<input type="text" name="email" placeholder="john@example.com">
+					<button type="submit"> <span>Get Started</span> </button>
+				</div>
+				
+			</div>
+		</section>
+	</section>
+
+	<section class="section__companies">
+		<div>
+			<img src="/Twitter Logo.png" alt="Twitter Logo">
+			<img src="/Youtube Logo.png" alt="Youtube Logo">
+			<img src="/Facebook Logo.png" alt="Facebook Logo">
+			<img class="on__tab" src="/Google Logo.png" alt="Google Logo">
+			<img class="on__tab" src="/Pinterest Logo.png" alt="Pinterest Logo">
+			<img class="on__desk" src="/Reddit Logo.png" alt="Reddit Logo">
+			<img class="on__desk" src="/Slack Logo.png" alt="Slack Logo">
+		</div>
+	</section>
+
+	<div class="escrow__wrapper ">
+		<main class="main__escrow">
+			<section class="section__escrow">
+				<div class="escrow__text">
+					<h2>Secure your money with Escrow</h2>
+					<p>Spense uses Escrow to seure all payment. We believe Escrows offer the highest level of security of your payments, so you never need to worry about scams</p>
+
+					<div class="escrow_link">
+						<a href="/">Learn more about escrow  →</a>
+					</div>
+				</div>
+
+				<div class = "mockups animate">
+					<img class="mockup__mobile" src="/Phone Mockup (Mobile).png" alt="Phone Showcasing Spense's Escrow Feature">
+					<img class="mockup__tablet" src="/Phone Mockup (Tablet).png" alt="Phone Showcasing Spense's Escrow Feature">
+					<img class="mockup__desktop" src="/Phone Mockup (Desktop).png" alt="Phone Showcasing Spense's Escrow Feature">
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<div class="editor__wrapper">
+	<section class="section__editor">
+		<div class="text_wrapper">
+			<div class="editor__text">
+				<h2>A text editor like no other.</h2>
+				<p>Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings</p>
+
+				<div class="editor__link">
+					<a href="/">Text Editor Live Demo → </a>
+				</div>
+			</div>
+		</div>
+
+		<div class="editor__mockup">
+			<img src="/Text Editor.png" alt="">
+		</div>
+	</section>
+	</div>
+
+	<footer>
+		<div class="footer_text__section">
+				<h3>spense.</h3>
+				<p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <em>just</em> that </p>
+			</div>
+
+			<div class="footer_lists__section">
+				<ul>
+					<h2> <a href="/">Company</a> </h2>
+					<li  class="link__footer link__animatn"> <a href="/">About</a> </li>
+					<li  class="link__footer link__animatn"> <a href="/"> Customers  </a></li>
+					<li  class="link__footer link__animatn"> <a href="/">Blog</a></li>
+				</ul>
+
+
+				<ul>
+					<h2>Opportunities</h2>
+					<li  class="link__footer link__animatn"> <a href="/">Jobs</a> </li>
+				</ul>
+				<ul>
+					<h2>Sitemap</h2>
+					<li  class="link__footer link__animatn"> <a href="/">Homepage</a> </li>
+				</ul>
+				<ul>
+					<h2>Resources</h2>
+					<li  class="link__footer link__animatn"> <a href="/">Support</a> </li>
+					<li  class="link__footer link__animatn"> <a href="/">Contact</a> </li>
+					<li  class="link__footer link__animatn"> <a href="/">FAQ</a> </li>
+
+				</ul>
+			</div>
+	</footer>
+</Layout>
+
+<script>
+	import '../js/index.js'
+</script>
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	/* h1 {
+		margin: 2rem 0;
+	} */
+
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		background: #4f39fa;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		color: var(--color-bg);
+	}
+
+	.instructions code {
+		font-size: 0.875em;
+		border: 0.1em solid var(--color-border);
+		border-radius: 4px;
+		padding: 0.15em 0.25em;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
